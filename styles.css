@@ -12,9 +12,23 @@ body {
 
 img {
     width: 40%;
+    animation: revolve 10s linear infinite;
+    
 }
 
-
+@keyframes revolve {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(359deg);
+    }
+}
+img:hover {
+    animation: pause;
+    border: none;
+   
+}
 
 
 
@@ -26,6 +40,7 @@ img {
     }
     .front {
         height: auto;
-        margin: 50px 25px 0px;
+        margin:  0px 50px;
+        transform: translateY(30%);
     }
 }
