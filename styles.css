@@ -1,18 +1,20 @@
 body {
     background-color: black;
+    padding-bottom: 30px;
 }
 .front {
     text-align: center;
     margin: 50px;
-    height: 100vh;
     box-sizing: border-box;
-    color: white;
-    
+    color: white; 
+    text-transform: uppercase; 
+    font-family: 'Yatra One', system-ui;
 }
 
 img {
     width: 40%;
     animation: revolve 10s linear infinite;
+    margin-bottom: 50px;
     
 }
 
@@ -30,17 +32,81 @@ img:hover {
    
 }
 
+.socials {
+    text-align: center;
+    padding: 50px;
+}
+.socials button {
+   border: none;
+   background-color: black;   
+}
 
+#taptool {
+     border: 1px solid white;
+     border-radius: 12px;
+     padding: 2px 8px;
+     
+}
+
+#taptool:hover {
+    background-color: white;
+}
+#taptools:hover {
+    background-color: white;
+    color: black;
+}
+.socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+  
+    font-family: 'Yatra One', system-ui;
+}
+.socials i {
+    color: white;
+    padding: 0px 20px;
+    font-size: 40px;
+}
+
+span {
+    text-align: center;
+    color: white;
+    font-family: 'Yatra One', system-ui;
+    margin: 10px 20px;
+    text-wrap: wrap;
+    width: 100%;
+}
+span p {
+    font-size: 20px;
+    overflow-wrap: break-word;
+    
+}
 
 @media screen and (min-width: 311px) and (max-width: 600px) {
+body {
+    width: 100%;
+    padding: 0px 25px 30px;
+}
 
     img {
-        width: 100%;
+        width: 85%;
         padding-bottom: 50px;
+        margin: auto;
     }
     .front {
-        height: auto;
-        margin:  0px 50px;
-        transform: translateY(30%);
+        margin:  50px auto 40px;
+        padding: 0px 30px;
+        text-align: center;
+    }
+
+    .socials i {
+        padding: 0px 10px;
+        font-size: 25px;
+    }
+    .socials {
+        padding: 10px 50px;
+    }
+    #taptool {
+        margin: 7px auto;
     }
 }
